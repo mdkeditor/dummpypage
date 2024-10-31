@@ -8,7 +8,7 @@
     <body>
         <h1>
             動作映像制作中ダミーページです。
-        <script>
+       <script>
 window.addEventListener('mouseover', initLandbot, { once: true });
 window.addEventListener('touchstart', initLandbot, { once: true });
 var myLandbot;
@@ -16,7 +16,7 @@ function initLandbot() {
   if (!myLandbot) {
     var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
     s.addEventListener('load', function() {
-      var myLandbot = new Landbot.Livechat({
+      myLandbot = new Landbot.Popup({
         configUrl: 'https://storage.googleapis.com/landbot.site/v3/H-2663497-QSCOTJ9GJ6QRCQNZ/index.json',
       });
     });
